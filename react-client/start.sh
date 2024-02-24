@@ -5,7 +5,7 @@ rm .env
 sleep 30 
 
 # Get the value of the USER environment variable
-export $SERVER_URL=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
+export SERVER_URL=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
 SERVER_URL=$SERVER_URL
 SERVER_PORT=$SERVER_PORT
 PORT=$PORT
